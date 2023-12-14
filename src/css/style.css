@@ -229,7 +229,7 @@ header .content .socialicons a {
   flex: 1 0 46%;
 }
 .portfolio .items > div:nth-child(1) {
-  background-image: url("/src/img/bg.jpg");
+  background-image: url("/src/img/gift-store.jpg");
 }
 .portfolio .items > div:nth-child(2) {
   background-image: url("/src/img/home-bg.jpg");
