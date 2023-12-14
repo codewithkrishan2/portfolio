@@ -45,7 +45,7 @@ header {
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: url("src/img/intro-bg.jpg");
+        background-image: url("../img/intro-bg.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -156,7 +156,7 @@ header {
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: url("src/img/bg.jpg");
+        background-image: url("../img/bg.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -272,20 +272,20 @@ header {
 
 
             &:nth-child(1) {
-                background-image: url('src/img/gift-store.jpg');
+                background-image: url('../img/gift-store.jpg');
 
             }
 
             &:nth-child(2) {
-                background-image: url('src/img/home-bg.jpg');
+                background-image: url('../img/home-bg.jpg');
             }
 
             &:nth-child(3) {
-                background-image: url('src/img/intro-bg.jpg');
+                background-image: url('../img/intro-bg.jpg');
             }
 
             &:nth-child(4) {
-                background-image: url('src/img/bg.jpg');
+                background-image: url('../img/bg.jpg');
             }
 
             .content {
@@ -341,7 +341,7 @@ header {
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: url("src/img/taj.jpg");
+        background-image: url("../img/taj.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
