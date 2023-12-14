@@ -476,15 +476,15 @@ header {
                     background-color: transparent;
                     border: 1px solid white;
                     color: white;
-                    border-radius: 5px;
+                    //border-radius: 5px;
     
                 }
     
                 button {
                     padding: 20px;
-                    background-color: orange;
-                    border-radius: 5px;
-                    border: none;
+                    background-color: $headingcolor;
+                    //border-radius: 5px;
+                    border: 1px solid white;
                     cursor: pointer;
     
                 }
