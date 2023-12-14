@@ -1,0 +1,426 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+::-moz-selection {
+  color: orange;
+  background-color: blueviolet;
+}
+
+::selection {
+  color: orange;
+  background-color: blueviolet;
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/src/img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+header .navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+header .navbar .logo {
+  font-size: 44px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+header .navbar .menu ul {
+  list-style: none;
+  display: flex;
+  margin-right: 50px;
+}
+header .navbar .menu ul li {
+  margin: 0 10px;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.9s ease;
+  font-weight: bolder;
+}
+header .navbar .menu ul li:hover {
+  border-bottom: 3px solid orange;
+  cursor: pointer;
+  border-radius: 10px;
+  color: orange;
+}
+header .content {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+header .content .hello {
+  font-size: 60px;
+  color: rgb(204, 0, 95);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+header .content .name {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+header .content .job {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+header .content button {
+  padding: 20px;
+  font-size: 30px;
+  border: 3px solid gray;
+  background: transparent;
+  margin-left: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: white;
+}
+header .content .socialicons {
+  margin-top: 30px;
+}
+header .content .socialicons a {
+  font-size: 50px;
+  margin: 30px;
+}
+
+.services {
+  position: relative;
+  height: 100vh;
+}
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/src/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+.services .content {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.services .content h3 {
+  font-size: 20px;
+  color: rgb(204, 0, 95);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: underline;
+}
+.services .content h1 {
+  font-size: 40px;
+}
+.services .content p {
+  font-size: 20px;
+  line-height: 40px;
+  color: lightgray;
+}
+.services .cards {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.services .cards .service1 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: auto;
+  line-height: 35px;
+}
+.services .cards .service1 i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.portfolio .content {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.portfolio .content h3 {
+  font-size: 20px;
+  color: rgb(204, 0, 95);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: underline;
+}
+.portfolio .content h1 {
+  font-size: 40px;
+}
+.portfolio .items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.portfolio .items > div {
+  flex: 1 0 48%;
+  height: 400px;
+  background-color: #fff;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 10px;
+}
+.portfolio .items > div:hover {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 380px;
+  flex: 1 0 46%;
+}
+.portfolio .items > div:nth-child(1) {
+  background-image: url("/src/img/bg.jpg");
+}
+.portfolio .items > div:nth-child(2) {
+  background-image: url("/src/img/home-bg.jpg");
+}
+.portfolio .items > div:nth-child(3) {
+  background-image: url("/src/img/intro-bg.jpg");
+}
+.portfolio .items > div:nth-child(4) {
+  background-image: url("/src/img/bg.jpg");
+}
+.portfolio .items > div .content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.portfolio .items > div .content h2 {
+  font-size: 20px;
+  color: rgb(204, 0, 95);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: underline;
+}
+.portfolio .items > div .content p {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 18px;
+  color: aliceblue;
+}
+.portfolio .items > div .content button {
+  padding: 20px;
+  font-size: 30px;
+  border: 3px solid gray;
+  background: transparent;
+  margin-left: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.about {
+  position: relative;
+  height: 100vh;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/src/img/taj.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+.about .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about .about-container .profile {
+  width: 50%;
+}
+.about .about-container .profile img {
+  height: auto;
+  width: 500px;
+}
+.about .about-container .about-text {
+  width: 50%;
+  margin-right: 40px;
+  color: aliceblue;
+}
+.about .about-container .about-text h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.about .about-container .about-text h3 {
+  font-size: 20px;
+  color: rgb(204, 0, 95);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: underline;
+}
+.about .about-container .about-text p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.about .socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about .socialmedia .socialbox {
+  width: 33.3%;
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about .socialmedia .socialbox i {
+  font-size: 100px;
+}
+.about .socialmedia .socialbox1 {
+  background-color: #0A66C2;
+}
+.about .socialmedia .socialbox2 {
+  background-color: black;
+}
+.about .socialmedia .socialbox3 {
+  background-color: #C13584;
+}
+
+.contact {
+  height: 100vh;
+  margin: auto;
+  max-width: 1350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.contact .contact-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.contact .contact-container .textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contact .contact-container .textContainer h1 {
+  font-size: 90px;
+  line-height: 88px;
+}
+.contact .contact-container .textContainer span {
+  font-weight: 300;
+}
+.contact .contact-container .formContainer {
+  flex: 1;
+  max-width: 40%;
+  position: relative;
+}
+.contact .contact-container .formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .contact-container .formContainer form input,
+.contact .contact-container .formContainer form textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+.contact .contact-container .formContainer form button {
+  padding: 20px;
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.contact .site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  width: 100%;
+  line-height: 24px;
+  color: #737373;
+}
+.contact .site-footer .copyright-text {
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
