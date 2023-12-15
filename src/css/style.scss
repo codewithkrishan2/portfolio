@@ -143,6 +143,8 @@ header {
         }
     }
 
+    
+
 }
 
 .services {
@@ -272,16 +274,16 @@ header {
 
 
             &:nth-child(1) {
-                background-image: url('../img/gift-store.jpg');
+                background-image: url('../img/gift.jpg');
 
             }
 
             &:nth-child(2) {
-                background-image: url('../img/home-bg.jpg');
+                background-image: url('../img/blog.jpg');
             }
 
             &:nth-child(3) {
-                background-image: url('../img/intro-bg.jpg');
+                background-image: url('../img/contact-manager.jpg');
             }
 
             &:nth-child(4) {
@@ -315,11 +317,11 @@ header {
                     padding: 20px;
                     font-size: 30px;
                     border: 3px solid gray;
-                    background: transparent;
+                    background: black;
                     margin-left: 30px;
                     margin-top: 30px;
                     cursor: pointer;
-                    color: white;
+                    color: $headingcolor;
                     display: inline-block;
                     text-decoration: none;
 
@@ -475,9 +477,7 @@ header {
                     padding: 20px;
                     background-color: transparent;
                     border: 1px solid white;
-                    color: aliceblue;
-                    //border-radius: 5px;
-    
+                    color: aliceblue;    
                 }
     
                 button {

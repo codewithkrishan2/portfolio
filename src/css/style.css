@@ -229,13 +229,13 @@ header .content .socialicons a {
   flex: 1 0 46%;
 }
 .portfolio .items > div:nth-child(1) {
-  background-image: url("../img/gift-store.jpg");
+  background-image: url("../img/gift.jpg");
 }
 .portfolio .items > div:nth-child(2) {
-  background-image: url("../img/home-bg.jpg");
+  background-image: url("../img/blog.jpg");
 }
 .portfolio .items > div:nth-child(3) {
-  background-image: url("../img/intro-bg.jpg");
+  background-image: url("../img/contact-manager.jpg");
 }
 .portfolio .items > div:nth-child(4) {
   background-image: url("../img/bg.jpg");
@@ -264,11 +264,11 @@ header .content .socialicons a {
   padding: 20px;
   font-size: 30px;
   border: 3px solid gray;
-  background: transparent;
+  background: black;
   margin-left: 30px;
   margin-top: 30px;
   cursor: pointer;
-  color: white;
+  color: rgb(204, 0, 95);
   display: inline-block;
   text-decoration: none;
 }
