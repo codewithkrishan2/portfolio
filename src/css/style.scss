@@ -163,7 +163,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
-        opacity: 0.2;
+        opacity: 0.1;
         z-index: -1;
     }
 
@@ -222,6 +222,7 @@ header {
 
 .portfolio {
     // height: 100vh;
+    background-color: #fff;
 
     .content {
         display: flex;
@@ -243,6 +244,7 @@ header {
 
         h1 {
             font-size: 40px;
+            color: black;
         }
     }
 
@@ -254,22 +256,29 @@ header {
 
 
         >div {
-            flex: 1 0 48%; // Adjust width as needed
+            flex: 1 0 42%; // Adjust width as needed
             height: 400px; // Adjust height as needed
             background-color: #fff;
+            // justify-content:flex-end;
+            // align-items: center;
             position: relative;
             background-size: cover;
-            background-position: center;
+            // background-position: center;
             color: #fff;
             transition: all 0.4s ease-in-out;
-            margin-bottom: 10px; // Adjust margin as needed
+            // padding: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px; 
 
             &:hover {
-                margin-top: 10px;
-                margin-left: 10px;
-                margin-right: 10px;
-                height: 380px;
-                flex: 1 0 46%;
+                margin: 60px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                // margin-left: 60px;
+                // margin-right: 60px;
+                height: 370px;
+                flex: 1 0 40%;
             }
 
 
@@ -303,7 +312,6 @@ header {
                     text-transform: uppercase;
                     letter-spacing: 5px;
                     text-decoration: underline;
-
                 }
 
                 p {

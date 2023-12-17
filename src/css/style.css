@@ -138,7 +138,7 @@ header .content .socialicons a {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: -1;
 }
 .services .content {
@@ -185,6 +185,9 @@ header .content .socialicons a {
   margin-bottom: 30px;
 }
 
+.portfolio {
+  background-color: #fff;
+}
 .portfolio .content {
   display: flex;
   height: 30vh;
@@ -204,6 +207,7 @@ header .content .socialicons a {
 }
 .portfolio .content h1 {
   font-size: 40px;
+  color: black;
 }
 .portfolio .items {
   display: flex;
@@ -211,22 +215,23 @@ header .content .socialicons a {
   gap: 20px;
 }
 .portfolio .items > div {
-  flex: 1 0 48%;
+  flex: 1 0 42%;
   height: 400px;
   background-color: #fff;
   position: relative;
   background-size: cover;
-  background-position: center;
   color: #fff;
   transition: all 0.4s ease-in-out;
-  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 .portfolio .items > div:hover {
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 380px;
-  flex: 1 0 46%;
+  margin: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  height: 370px;
+  flex: 1 0 40%;
 }
 .portfolio .items > div:nth-child(1) {
   background-image: url("../img/gift.jpg");
